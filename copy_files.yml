@@ -1,0 +1,11 @@
+- name: Ansible Copy Local to Remote
+  hosts: host
+  tasks:
+    - name: copying file with playbook
+      become: true 
+      copy:
+        src: /home/semaphore.yaml
+        dest: /home/directfn
+        owner: directfn
+        group: directfn       
+        mode: 0644
