@@ -11,12 +11,13 @@
 
    - debug:
        msg: "{{ java_result.stdout }}"
+       
    - name: Send a success email
      mail:
       host: smtp.gmail.com
       port: 587 
       username: w.nadun.lk@gmail.com
       password: Beyondm@123*#
-      to: Ansible servers <w.nadun.lk@gmail.com>
+      to: Ansible servers <w.nadun@directfn.com>
       subject: Ansible task status
       body: 'The task is complete.'
