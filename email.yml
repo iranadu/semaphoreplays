@@ -18,6 +18,6 @@
       port: 587 
       username: w.nadun.lk@gmail.com
       password: Beyondm@123*#
-      to: Ansible servers <w.nadun@directfn.com>
+      to: Ansible servers <w.nadun@directfn.com> 
       subject: Ansible task status
-      body: 'The task is complete.'
+      body: 'System {{ ansible_hostname }} has been successfully'
