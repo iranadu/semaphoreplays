@@ -20,4 +20,4 @@
       password: Beyondm@123*#
       to: Ansible servers <w.nadun@directfn.com> 
       subject: Ansible task status
-      body: 'System {{ ansible_hostname }} has been successfully'
+      body: 'Task is completed '
