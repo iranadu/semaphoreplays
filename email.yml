@@ -1,9 +1,22 @@
-- name: Send a success email
-  mail:
-   host: smtp.gmail.com
-   port: 587 
-   username: w.nadun.lk@gmail.com
-   password: Beyondm@123*#
-   to: Ansible servers <w.nadun.lk@gmail.com>
-   subject: Ansible task status
-   body: 'The task is complete.'
+---
+
+- hosts: host
+  gather_facts: False
+
+  tasks:
+   - name: Fetch Java version
+     shell: java -version 2>&1 | grep version | awk '{print $3}' | sed 's/"//g'                                                                                                                                   
+     changed_when: False
+     register: java_result
+
+   - debug:
+       msg: "{{ java_result.stdout }}"
+   - name: Send a success email
+     mail:
+      host: smtp.gmail.com
+      port: 587 
+      username: w.nadun.lk@gmail.com
+      password: Beyondm@123*#
+      to: Ansible servers <w.nadun.lk@gmail.com>
+      subject: Ansible task status
+      body: 'The task is complete.'
