@@ -1,0 +1,9 @@
+- name: Send a success email
+  mail:
+   host: smtp.gmail.com
+   port: 587 
+   username: w.nadun.lk@gmail.com
+   password: Beyondm@123*#
+   to: Ansible servers <w.nadun.lk@gmail.com>
+   subject: Ansible task status
+   body: 'The task is complete.'
