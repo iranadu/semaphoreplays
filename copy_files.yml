@@ -4,7 +4,7 @@
     - name: copying file with playbook
       become: true 
       copy:
-        src: /home/semaphore.yaml
+        src: /home/directfn/testfile.txt
         dest: /home/directfn
         owner: directfn
         group: directfn       
