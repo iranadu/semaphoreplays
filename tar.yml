@@ -1,0 +1,10 @@
+---
+ - name: Ansible archive Examples
+   user: directfn
+   hosts: host
+   tasks:
+    - name: Compress Directory contents
+      become: yes
+      archive:
+        path: /home/directfn/scripts/
+        dest: /home/directfn/scripts/scripts.tar.gz
