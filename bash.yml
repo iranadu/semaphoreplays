@@ -9,6 +9,8 @@
         dest: /home/directfn/scripts/scripts.tar.gz
 
    tasks:
+    – name: Copy script 
+      copy: src=test.sh dest=/home/bvunix mode=0777
     – name: Run script for audit
       command: sh /home/directfn/scripts/test.sh
 
