@@ -8,3 +8,4 @@
  
      - name: Execute the script
        command: sh /home/directfn/start/start_falcon_server.sh
+       remote_src: true
