@@ -3,12 +3,6 @@
    user: directfn
    hosts: host
    tasks:
-    - name: Compress Directory contents
-      archive:
-        path: /home/directfn/scripts/
-        dest: /home/directfn/scripts/scripts.tar.gz
-
-   tasks:
     – name: Copy script 
       copy: src=start_falcon_server.sh dest=/home/directfn/start/ mode=0777
     – name: Run script for audit
