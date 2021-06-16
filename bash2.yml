@@ -2,10 +2,11 @@
 - name: Let's copy our executable script to remote location, execute script and get result back.
   user: directfn
   hosts: host
+  become: true
   tasks:
      - name: Transfer executable script script
        copy: src=start_falcon_server.sh dest=/home/directfn/start/ mode=0777
  
      - name: Execute the script
        command: sh /home/directfn/start/start_falcon_server.sh
-       remote_src: true
+     remote_src: true
