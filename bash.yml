@@ -10,7 +10,7 @@
 
    tasks:
     – name: Run script for audit
-      command: sh /home/directfn/scripts/release_manage.sh
+      command: sh /home/directfn/scripts/test.sh
 
     - name: Send a success email
        
