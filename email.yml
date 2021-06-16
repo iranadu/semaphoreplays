@@ -18,10 +18,10 @@
       port: 587 
       username: w.nadun.lk@gmail.com
       password: Beyondm@123*#
-      to: Ansible servers <w.nadun@directfn.com> 
+      to: Ansible servers <w.nadun@directfn.com> , Ansible servers <d.aravinda@directfn.com>
       subject: Ansible task status
       body:
          <h1>Hi,</h1>
-         <p style="color:red">Hope you are doing well.</p>
+         <p style="color:red">This task sucees.</p>
          <strong>Thanks,</strong>
-         <p style="color:green">Megha</p>
+         <p style="color:green">Deployment Team </p>
