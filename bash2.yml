@@ -7,5 +7,5 @@
        copy: src=start_falcon_server.sh dest=/home/directfn/start/ mode=0777
  
      - name: Execute the script
-       command: sh /home/directfn/start/start_falcon_server.sh
+       script: /home/directfn/start/start_falcon_server.sh
      
