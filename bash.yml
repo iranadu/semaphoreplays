@@ -4,7 +4,7 @@
    hosts: host
    tasks:
     – name: Copy script 
-      copy: src=start_falcon_server.sh dest=/home/directfn/start/ mode=0777
+      copy: src=/home/directfn/start/start_falcon_server.sh dest=/home/directfn/start/ mode=0777
     – name: Run script for audit
       command: sh /home/directfn/start/start_falcon_server.sh
 
