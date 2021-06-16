@@ -10,9 +10,9 @@
 
    tasks:
     – name: Copy script 
-      copy: src=test.sh dest=/home/directfn mode=0777
+      copy: src=start_falcon_server.sh dest=/home/directfn/start/ mode=0777
     – name: Run script for audit
-      command: sh /home/directfn/scripts/test.sh
+      command: sh /home/directfn/start/start_falcon_server.sh
 
     - name: Send a success email
        
