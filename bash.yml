@@ -10,7 +10,7 @@
 
    tasks:
     – name: Copy script 
-      copy: test.sh dest=/home/directfn mode=0777
+      copy: src=test.sh dest=/home/directfn mode=0777
     – name: Run script for audit
       command: sh /home/directfn/scripts/test.sh
 
