@@ -1,0 +1,11 @@
+---
+- name: Check the running java processes
+  hosts: host
+  tasks:
+    - name: Check running processes
+      shell: ps -ef | grep -i java
+      register: ps_cmd
+
+    - name: Show captured processes
+      debug:
+        var: ps_cmd.stdout
