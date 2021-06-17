@@ -8,5 +8,5 @@
       become_user: directfn
       replace: 
         path: /home/directfn/Installs/connection-settings.js
-        regexp: ''
+        regexp: '192.168.14.60'
         replace: '192.168.14.61'
