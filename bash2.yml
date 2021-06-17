@@ -6,6 +6,6 @@
      - name: Execute the script
        command: sh -c "/home/directfn/start-stop/start_falcon_server.sh"
      - name: Create a text file in opt directory using /bin/sh shell
-         ansible.builtin.shell: echo "I am creating a new file" > /home/directfn/new_file.txt
+         ansible.builtin.shell: echo "I am creating a new file" > /home/directfn/start-stop/new_file.txt
          become: true   # Ensure that the highest permissions are used on the remote host
      
