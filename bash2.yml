@@ -4,5 +4,5 @@
   hosts: host
   tasks:
      - name: Execute the script
-       command: sh -c "/home/directfn/start/start_falcon_server.sh --param1 'param1' "
+       command: sh -c "/home/directfn/start-stop/start_falcon_server.sh --param1 'param1' "
      
