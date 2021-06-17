@@ -1,0 +1,12 @@
+---
+  - name: Replace line in file examples
+    hosts: host
+    tasks:
+    - name: "Replace line in connction js "
+      become_user: directfn
+      replace: 
+        path: /usr/share/nginx/html/ntpua/connection-settings.js
+        regexp: ''
+        replace: '192.168.14.61'
+        before:'priceSettings'
+        backup: yes
