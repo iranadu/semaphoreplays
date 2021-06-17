@@ -6,5 +6,5 @@
      - name: Execute the script
        command: sh -c "/home/directfn/start-stop/start_falcon_server.sh"
      - name: Execute the script with args 
-       command: sh -c "/home/directfn/scripts/manager.sh --param1 'param1' "
+       script: /home/directfn/scripts/manager.sh --param1 param1 --param2 param2 --param3 param3 --param4 param4
      
