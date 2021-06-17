@@ -2,11 +2,12 @@
   - name: Replace line in file examples
     hosts: host
     tasks:
-    - name: "Replace line in connction js "
+
+    - name: "Replacing the Fox with Formatting only in headline before closing of H2"
+      become: yes
       become_user: directfn
       replace: 
         path: /usr/share/nginx/html/ntpua/connection-settings.js
         regexp: ''
         replace: '192.168.14.61'
-        before:"priceSettings"
         backup: yes
