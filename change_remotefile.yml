@@ -8,5 +8,5 @@
         path: /usr/share/nginx/html/ntpua/connection-settings.js
         regexp: ''
         replace: '192.168.14.61'
-        before:'priceSettings'
+        before:"priceSettings"
         backup: yes
