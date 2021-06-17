@@ -1,15 +1,13 @@
 --- 
 - 
   hosts: host
-  name: "Let's copy our executable script to remote location, execute script and get result back."
-  tasks: 
-    - 
-      command: "sh -c \"/home/directfn/start-stop/start_falcon_server.sh\""
+  user: directfn
+  name: Let's copy our executable script to remote location, execute script and get result back.
+  tasks:
+      command: "sh -c/home/directfn/start-stop/start_falcon_server.sh"
       name: "Execute the script"
       register: command_output
       shell: uptime
-    - 
-      ansible.builtin.shell: "echo \"I am creating a new file\" > /home/directfn/start-stop/new_file.txt"
+      ansible.builtin.shell: echo I am creating a new file > /home/directfn/start-stop/new_file.txt
       become: true
-      name: "Create a text file in opt directory using /bin/sh shell"
-  user: directfn
+      name: Create a text file in opt directory using /bin/sh shell
