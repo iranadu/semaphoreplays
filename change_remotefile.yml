@@ -7,7 +7,6 @@
       become: yes
       become_user: directfn
       replace: 
-        path: /usr/share/nginx/html/ntpua/connection-settings.js
+        path: /home/directfn/Installs/connection-settings.js
         regexp: ''
         replace: '192.168.14.61'
-        backup: yes
