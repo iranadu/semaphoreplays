@@ -17,6 +17,7 @@
         password: Beyondm@123*#
         to: Ansible servers <w.nadun@directfn.com>
         subject: Ansible task status
+        subtype: html
         body:
          <h1>Hi,</h1>
          <p style="color:red">This task sucees.</p>
