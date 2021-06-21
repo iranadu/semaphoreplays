@@ -2,8 +2,10 @@
  - name: Ansible archive Examples
    user: directfn
    hosts: host
-   tasks:
-    - name: Compress Directory contents
-      archive:
-        path: /home/directfn/scripts/
-        dest: /home/directfn/scripts/scripts.tar.gz
+   tasks:      
+   become: yes      
+
+   get_url:
+      url: curl -uviraj:AP5NFbRipQFuJrozbggriZ5FDgg -O "https://jfrog.directfn.net/artifactory/ntp_utils/java_1.8.121/jdk1.8.0_121.tgz"
+      dest: /app
+      timeout: 5
