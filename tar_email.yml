@@ -10,7 +10,6 @@
         
     - name: Execute the script esb stop 
       command: sh /home/directfn/app/esb/DFNNTPESB_CGS_X_1.003.06.0/StopServer.sh
-      register: swap_exists
       
     - name: Execute the script esb start 
       command: sh /home/directfn/app/esb/DFNNTPESB_CGS_X_1.003.06.0/StartServer_Foreground.sh
