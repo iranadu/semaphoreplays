@@ -10,3 +10,5 @@
         
     - name: Execute the script gateway start 
       command: sh /home/directfn/scripts/start_gateway.sh
+      register: swap_exists
+      ignore_errors: true
