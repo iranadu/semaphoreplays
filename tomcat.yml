@@ -3,7 +3,7 @@
   gather_facts: no
   tasks:
   - name: Download Tomcat
-    get_url: url=http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32.tar.gz dest=/home
+    get_url: url=wget --no-check-certificate https://viraj:AP5NFbRipQFuJrozbggriZ5FDgg@jfrog.directfn.net/artifactory/ntp_utils/java_1.8.121/jdk1.8.0_121.tgz dest=/home
 
   - name: Extract the file downloaded tomcat file
     command: tar xvf apache-tomcat-8.5.32.tar.gz
