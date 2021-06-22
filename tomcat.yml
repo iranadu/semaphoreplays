@@ -1,0 +1,13 @@
+---
+- hosts: webservers
+  become: true
+  gather_facts: no
+  tasks:
+  - name: Download Tomcat
+    get_url: url=http://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32.tar.gz dest=/home
+
+  - name: Extract the file downloaded tomcat file
+    command: tar xvf apache-tomcat-8.5.32.tar.gz
+ 
+  - name: Move the Tomcat directory to a smaller one
+    command: mv apache-tomcat-8.5.32 tomcat
