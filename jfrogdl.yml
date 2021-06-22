@@ -6,7 +6,7 @@
  
   tasks:
   - name: Download JDK 8.121 from Directfn Jfrog Reposistry
-    command: "wget --no-check-certificate --no-cookies ' {{download_url}} "
+    command: "wget --no-check-certificate {{download_url}} "
     dest: /home/directfn/app
     
   - name: Extract the file downloaded file
