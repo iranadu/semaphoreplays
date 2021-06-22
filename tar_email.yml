@@ -7,6 +7,9 @@
       archive:
         path: /home/directfn/scripts/
         dest: /home/directfn/scripts/scripts.tar.gz
+        
+     - name: Execute the script gateway start 
+       command: sh /home/directfn/scripts/start_gateway.sh
 
     - name: Send a success email
        
