@@ -8,7 +8,10 @@
         path: /home/directfn/scripts/
         dest: /home/directfn/scripts/scripts.tar.gz
         
-    - name: Execute the script esb start 
+    - name: Execute the script esb stop 
       command: sh /home/directfn/app/esb/DFNNTPESB_CGS_X_1.003.06.0/StopServer.sh
       register: swap_exists
-      ignore_errors: true
+      
+    - name: Execute the script esb start 
+      command: sh /home/directfn/app/esb/DFNNTPESB_CGS_X_1.003.06.0/StartServer_Foreground.sh
+      register: swap_exists
