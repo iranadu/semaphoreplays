@@ -1,6 +1,5 @@
 ---
 - hosts: host
-  become: true
   gather_facts: no
   tasks:
   - name: Download Tomcat
