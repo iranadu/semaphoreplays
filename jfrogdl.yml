@@ -1,0 +1,18 @@
+---
+- hosts: host
+  become: true
+  vars:
+   download_url: https://viraj:AP5NFbRipQFuJrozbggriZ5FDgg@jfrog.directfn.net/artifactory/ntp_utils/java_1.8.121/jdk1.8.0_121.tgz
+  
+  tasks:
+  - name: Download JDK 8.121 from Directfn Jfrog Reposistry
+    command: "wget --no-check-certificate --no-cookies ' {{download_url}} "
+    dest: /home/directfn/app
+    
+  - name: Extract the file downloaded file
+    command: tar xvf jdk1.8.0_121.tgz
+    
+  - name: Move the directory to a smaller one
+    command: mv jdk1.8.0_121 java1.8
+    
+  
